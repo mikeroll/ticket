@@ -76,7 +76,6 @@ def cli():
 @click.argument('description')
 @click.option('--start', '-s', is_flag=True,
               help="Move the new ticket to \"in progress\" state.")
-@click.option('--goto', '-g', is_flag=True, help="Open the ticket in browser.")
 def new(summary, description, start):
     """Create a new ticket"""
     ticket = jira().create_issue(fields={
