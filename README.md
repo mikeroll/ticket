@@ -1,7 +1,7 @@
 # Ticket
 
 ### What?
-A little cli tool to keep track your JIRA issues really simple and organized.
+A little cli tool to keep your JIRA issues really simple and organized.
 
 ### Installation
 ```python
