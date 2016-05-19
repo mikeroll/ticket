@@ -1,0 +1,25 @@
+# Basic stuff
+jira_url: https://my.jira/
+username: qwerty
+password: 12345678
+
+# The project to work in. Only a single one is supported atm.
+project: TEST
+
+# Status names to be shown in 'show' output
+open_types:
+  - Open
+  - In Progress
+  - Reopened
+
+# The type of task to create by default
+default_type: Task
+
+# Transition names
+transition_start: Start Progress
+transition_stop: Stop Progress
+transition_close: Close Issue
+
+# Override default 'show' content. Default is body only
+show_body: true
+show_comments: true
