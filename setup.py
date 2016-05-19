@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='ticket',
@@ -7,7 +7,7 @@ setup(
     author='mikeroll',
     author_email='scaryspiderpig@gmail.com',
     license='MIT',
-    py_modules=['ticket'],
+    packages=find_packages(),
     entry_points={
         'console_scripts': [
             'ticket=ticket:cli'
