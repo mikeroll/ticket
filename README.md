@@ -23,11 +23,6 @@ This is built using the awesome [Click](https://github.com/pallets/click) librar
 
 ### I got 99 tickets but no sh*t ain't done
 ```
-$ ticket show
-TP-11  Open  Need to do a bunch of stuff
-TP-10  Open  Need to do that
-TP-9   Open  Need to do this
-
 $ ticket new 'Someone found a bug' 'On my way!'
 TP-12 | Open | 0.0h | Someone found a bug
 https://jira.devops.mnscorp.net/browse/TP-12
@@ -56,7 +51,6 @@ mikeroll (mikeroll) @ 2016-05-19T16:10:14.603+0000
 Done!
 
 $ ticket show
-TP-12  In Progress  Someone found a bug
 TP-11  Open         Need to do a bunch of stuff
 TP-10  Open         Need to do that
 TP-9   Open         Need to do this
