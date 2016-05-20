@@ -101,7 +101,7 @@ def show(ticket_id, body, comments):
         if not body and not comments:
             body = config.get('show_body', True)
             comments = config.get('show_comments', False)
-        show_ticket(ticket, body, comments)
+        show_ticket(ticket, body=body, comments=comments)
     else:
         query = ('project = {0} AND '.format(config['project']) +
                  'assignee in (currentUser()) AND ' +
