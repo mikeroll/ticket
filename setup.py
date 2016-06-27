@@ -10,7 +10,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'ticket=ticket:cli'
+            'ticket=ticket.ticket:cli'
         ]
     },
     install_requires=[
