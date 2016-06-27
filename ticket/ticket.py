@@ -161,3 +161,18 @@ def say(ticket_id, message):
     """Comment on a ticket"""
     comment = jira().add_comment(ticket_key(ticket_id), message)
     show_comment(comment)
+
+
+@cli.command(cls=JiraAction)
+@click.argument('ticket_id')
+def browse(ticket_id):
+    """Open a ticket in browser"""
+    url = jira().issue(ticket_key(ticket_id)).permalink()
+    click.launch(url, locate=True)
+
+
+@cli.command(cls=JiraAction)
+@click.argument('ticket_id')
+def grab(ticket_id):
+    issue = jira().issue(ticket_key(ticket_id))
+    jira().assign_issue(issue, jira().myself()['key'])
